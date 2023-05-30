@@ -1,0 +1,1 @@
+find . -type f -name '*.c' -printf '%i\n' # find in (. current directory) type(file) fileName(anything.c) print(inode number) 

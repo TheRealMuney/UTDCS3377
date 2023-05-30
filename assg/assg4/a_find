@@ -1,0 +1,1 @@
+find . -type f -mtime -1 #find in (. working directory)  all type(file) modifiedTime(1 day)

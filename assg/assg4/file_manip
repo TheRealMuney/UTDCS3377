@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#checks num arguments
+if [ -z $# ]
+	then
+	echo "No arguments given"
+	exit 1
+fi
+
+#checks if argument is a dir/exists
+if [ ! -d "$1" ] 
+	then
+	echo "Directory does not exist"
+	exit 1
+fi
+
+find "$1" -type f -empty | while read fileList # find in dir arg files that are empty -> goes to while loop as fileList var
+do
+( #makes sure read does not run after find has completed
+
+	echo "File: $fileList"
+
+	if [ "$2" == "-f" ] # if force delete is used
+		then
+		rm "$fileList"
+		echo "File deleted..."
+	else # if no force delete
+		exec < /dev/tty # moves output to terminal
+		read -p "Delete file? (y/n)" yn #prompt user
+		
+		if [ "$yn" == "y" ]
+			then
+			rm "$fileList"
+			echo "File deleted..."
+		else # if not yes
+			echo "File not deleted..."
+		fi
+	fi
+)
+done
+echo "Finished." # shows that loop finished
+	
