@@ -1,0 +1,27 @@
+This is a basic command that allows you to change your current working directory
+
+You likely used it to get here
+
+Example: cd myDirectory
+
+Some important info:
+
+cd - Go to the home directory of the current user.
+
+cd ~username - Go to the home directory of a specific user.
+
+cd / - Go to the root directory.
+
+cd .. - Go up one directory level.
+
+cd ../../ - Go up two directory levels.
+
+cd - - Go to the previous working directory.
+
+cd -P - Go to the physical directory instead of the symbolic link.
+
+cd -L - Go to the symbolic link directory instead of the physical directory.
+
+cd -- - Go to the previous working directory, even if the name starts with a hyphen.
+
+cd -e - Exit immediately if the directory does not exist.

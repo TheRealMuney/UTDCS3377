@@ -1,0 +1,34 @@
+The | operator (known as the pipe operator) is used to send the output of one command as the input to another
+
+Examples:
+-----------------------------------------------------------------------------------------------------------------
+grep: The grep command is used to search for a specific pattern in a file.
+
+Using the pipe symbol, you can search for a pattern within the output of another command.
+
+For example, ls | grep ".txt" will display only the files in the current directory that have a ".txt" extension.
+------------------------------------------------------------------------------------------------------------------
+sort: The sort command is used to sort the contents of a file.
+
+By piping the output of another command to sort, you can sort the output of that command.
+
+For example, ps aux | sort -r will display the running processes sorted high to low by the amount of CPU usage.
+-----------------------------------------------------------------------------------------------------------------
+awk: The awk command is used to process and manipulate text.
+
+By piping the output of another command to awk, you can perform more complex text processing.
+
+For example, ls -l | awk '{print $9}' will display only the filenames of the files in the current directory.
+-----------------------------------------------------------------------------------------------------------------
+sed: The sed command is used to perform text transformations on a file.
+
+By piping the output of another command to sed, you can perform more complex text transformations.
+
+For example, ls -l | sed 's/ */ /g' will replace multiple spaces in the output of ls -l with a single space.
+-----------------------------------------------------------------------------------------------------------------
+wc: The wc command is used to count the number of lines, words, and characters in a file.
+
+By piping the output of another command to wc, you can count the lines, words, and characters from that command.
+
+For example, ls -l | wc -l will display the number of files in the current directory.
+-----------------------------------------------------------------------------------------------------------------

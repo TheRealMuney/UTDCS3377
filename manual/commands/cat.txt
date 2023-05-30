@@ -1,0 +1,27 @@
+This is a very basic command that allows you to be able to see the output of a file without opening it
+
+This is often used with different operators (which can be found in the operators file)
+
+Example: cat text.txt
+
+Some important info:
+
+-n : This option displays the contents of a file with line numbers.
+
+-b : This option displays the contents of a file with line numbers, but only for non-blank lines.
+
+-E : This option displays a dollar sign ($) at the end of each line, indicating the end of the line.
+
+-T : This option displays tab characters as ^I.
+
+-s : This option squeezes multiple blank lines into a single blank line.
+
+-v : This option displays non-printable characters as ^X or M-^X (where X is a letter or number).
+
+-u : This option disables output buffering, displaying the contents of a file immediately as they are read.
+
+-A : This option displays all characters, including control characters and special characters, with non-printable characters displayed in a visible form.
+
+-q : This option suppresses the display of non-printable characters, displaying them as question marks instead.
+
+-r : This option displays the contents of a file in reverse order, starting with the last line and ending with the first.

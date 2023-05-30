@@ -1,0 +1,26 @@
+This is a basic command that allows you to be able to move a file somewhere else
+
+This can also be used to rename a file without changing the contents
+
+Examples: mv this.txt that.txt - rename
+	  mv this.txt ~dir/dir2/ - move
+
+Some important info:
+
+-i: This option prompts before overwriting any existing files. This is useful if you want to avoid accidentally overwriting any files.
+
+-v: This option enables verbose mode, displaying each file as it is moved or renamed.
+
+-u: This option only moves a file if the source file is newer than the destination file, or if the destination file does not exist.
+
+-n: This option prevents overwriting existing files and instead keeps the original file as is.
+
+-t: This option allows you to specify the target directory for the moved files.
+
+--backup: This option creates a backup copy of the original file before overwriting it.
+
+--suffix=SUFFIX: This option allows you to specify a suffix to add to the backup file.
+
+--version-control: This option creates a numbered backup of the original file, rather than just a single backup copy.
+
+-f: This option forces the move or rename, even if it would overwrite existing files or cause other errors.

@@ -1,0 +1,33 @@
+This is a command that allows you to open a file and edit it
+
+This is similar to opening a file in Notepad
+
+Example: vi text.txt
+
+Some important info:
+
+NOTE: THESE MUST BE USED NOT IN EDIT MODE
+
+:w - Save the current file.
+
+:q - Quit the editor.
+
+:q! - Quit the editor without saving changes.
+
+:wq - Save the file and exit the editor.
+
+:set number - Display line numbers.
+
+:set autoindent - Automatically indent lines.
+
+:set tabstop=4 - Set the tab size to 4 spaces.
+
+/search_term - Search for a specific term in the file.
+
+n - Move to the next search result.
+
+N - Move to the previous search result.
+
+:s/search_term/replace_term/g - Replace all occurrences of a term with another term.
+
+:set hlsearch - Highlight search results.

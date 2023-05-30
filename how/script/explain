@@ -1,0 +1,42 @@
+Making a scripting file will execute the files commands in order as if being executed on the command line
+
+if [something]
+elif [something else]
+else
+fi
+
+The [] act as a placeholder for the command test which checks if a value is true
+elif is the same as else if in C++ 
+else is the same as C++
+fi marks the end of the if-else sequence
+
+All commands to follow if/elif/else need to be indented like Python for readability, but technically don't *need* them
+
+Example: 
+if [-f example.txt] 
+	echo "example.txt exists"
+elif [-f nothing.txt]
+	echo "example.txt wasn't found, but nothing.txt was"
+else 
+	echo "example.txt and nothing.txt do not exist in the current directory"
+fi
+
+-lt = less than
+-gt = greater than
+-eq = equal
+-ne = not equal
+-le = less than or equal
+-ge = greater than or equal
+
+expr can be used in combination with this to evaluate mathematical operations with integers
+
+if [expr 1 + 2 -gt 5]
+...
+
+let can be used for variables
+
+x = 2
+let x = x * x
+echo x
+
+for, while, and until loops exist as well; check respective files for syntax

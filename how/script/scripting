@@ -1,0 +1,7 @@
+# This script will output the users name, the number of uses logged in, and the date
+
+echo -e "Hello, $USER"
+echo -e "Today is: $(date)"
+echo -n "There are: "
+echo -n $(who | wc -l)
+echo " users online"

@@ -1,0 +1,51 @@
+This will explain the basics of arrays in C++ 
+
+An array is a section of contiguous memory in the computer that is allocated with x amount of chunks in the call:
+varType arrayName[x] = ...
+
+
+Those chunks sizes are based on the variable type
+
+To access the value stored in each chunk, use the syntax:
+arrayName[n] -> where n is the index of the value desired
+
+The index of arrays starts from 0 to the size of the array minus 1
+
+Ex:
+
+int array[3] = {1,2,3};
+
+The index of the first value is 0, but the value stored is 1, so cout << array[0] -> 1
+
+NOTE: If you do not initialize the arrays values, they will be automatically 0, or a garbage value from the compiler,  so it is good practice to use the following syntax for empty arrays -> type array[size] = {0}; -> This will initialize all values to 0, with no garbage values in the array
+
+Proof:
+{cslinux1:~} cat fCode.cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+int array[2];
+cout << array[0] << "+" << array[1] << endl;
+
+
+}
+{cslinux1:~} ./outFile
+4196544+0
+{cslinux1:~} vim fCode.cpp
+{cslinux1:~} g++ -o outFile fCode.cpp
+{cslinux1:~} ./outFile
+0+0
+{cslinux1:~} cat fCode.cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+int array[2] = {0};
+cout << array[0] << "+" << array[1] << endl;
+
+}

@@ -1,0 +1,22 @@
+To compile c++ code follow these steps:
+
+1. make cpp files
+2. g++ -c filename1.cpp filename2.cpp etc.cpp
+3. g++ -o output.exe filename1.o filename2.o etc.o
+4. ./output.exe
+
+To explain:
+1. This step is where the coding is done; nothing special to be done when creating these using vi codename
+2. The g++ -c means to only compile the following files, and not link
+3. The g++ -o means to link the output of these files to the following names 
+4. This excutes the code linked
+
+To create a Makefile for these:
+1. vi Makefile
+2. Include the commands to be executed by the makefile -> similar to 1-4 above including dependencies and clean
+3. make
+
+clean -> this deletes all of the .o files, thus clearing the outputs, while keeping the .cpp files for the original code
+dependencies -> if the execution of the command depends on a file or the execution of another command, include a : depend
+(replace depend with the file name -> hello.o example.o etc.o would check makefile for these commands first and run those)
+

@@ -1,0 +1,27 @@
+This is the most basic command that exists, and you likely used it to navigate here
+
+ls lists all of the items in the current directory
+
+Example: ls -ltr
+
+Some important info:
+
+-l : This option displays the contents of a directory in a long listing format, which includes file permissions, owner, group, file size, and modification time.
+
+-a : This option displays all files and directories, including hidden files.
+
+-h : This option makes the output of file sizes more human-readable, showing the sizes in a more easily understandable format.
+
+-r : This option reverses the order in which files and directories are displayed.
+
+-t : This option sorts the files and directories by modification time, showing the most recently modified files first.
+
+-R : This option recursively lists the contents of all subdirectories.
+
+--color : This option adds color to the output, making it easier to distinguish between different types of files.
+
+-i : This option displays the inode number of each file or directory.
+
+-S : This option sorts the files and directories by size, with the largest files first.
+
+-U : This option disables sorting, displaying files and directories in the order in which they appear in the directory.
